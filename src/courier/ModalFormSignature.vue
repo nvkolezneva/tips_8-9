@@ -61,9 +61,9 @@ require("pidcrypt/aes_cbc")
 
 var aes = new pidCrypt.AES.CBC()
 
-var  crypted1 = aes.encryptText(code1, "password", {nBits: 256});
+var  crypted1 = aes.encryptText(code1, "courier", {nBits: 256});
 
-var  crypted2 = aes.encryptText(code2, "password", {nBits: 256});
+var  crypted2 = aes.encryptText(code2, "client", {nBits: 256});
 
 console.log("Отправитель: '%s'", crypted1);
 console.log("Курьер: '%s'", crypted2);
